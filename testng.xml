@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://www.ebay.com/"/>
+        <classes>
+            <class name="Test_Cases.Main">
+                <methods>
+                    <include name="temp"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Navigate">
+                <methods>
+                    <include name="openUrl"/>
+                    <include name="checkUrl"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Category_Select">
+                <methods>
+                    <include name="Select_Category"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Search">
+                <methods>
+                    <include name="SearchMobiles"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.First_Result">
+                <methods>
+                    <include name="first_result"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Display_Item">
+                <methods>
+                    <include name="getTitle"/>
+                    <include name="getPrice"/>
+                    <include name="selectPlug"/>
+                    <include name="selectColor"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Add_Cart">
+                <methods>
+                    <include name="addToCart"/>
+                    <include name="Assertiveness"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Checkout">
+                <methods>
+                    <include name="getTabTitle"/>
+                    <include name="getCheckOutPrice"/>
+                    <include name="goToCheckout"/>
+                    <include name="Guest_button_Click"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Quit">
+                <methods>
+                    <include name="quit"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="firefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="url" value="https://www.ebay.com/"/>
+        <classes>
+            <class name="Test_Cases.Main">
+                <methods>
+                    <include name="temp"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Navigate">
+                <methods>
+                    <include name="openUrl"/>
+                    <include name="checkUrl"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Category_Select">
+                <methods>
+                    <include name="Select_Category"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Search">
+                <methods>
+                    <include name="SearchMobiles"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.First_Result">
+                <methods>
+                    <include name="first_result"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Display_Item">
+                <methods>
+                    <include name="getTitle"/>
+                    <include name="getPrice"/>
+                    <include name="selectPlug"/>
+                    <include name="selectColor"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Add_Cart">
+                <methods>
+                    <include name="addToCart"/>
+                    <include name="Assertiveness"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Checkout">
+                <methods>
+                    <include name="getTabTitle"/>
+                    <include name="getCheckOutPrice"/>
+                    <include name="goToCheckout"/>
+                    <include name="Guest_button_Click"/>
+                </methods>
+            </class>
+            <class name="Test_Cases.Quit">
+                <methods>
+                    <!--                    <include name="quit"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
